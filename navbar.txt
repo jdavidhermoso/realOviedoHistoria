@@ -1,0 +1,93 @@
+ 
+
+                    <div class="nav-bar" id="nav-bar"> 
+                        <ul class="nav-bar-title-list" id="nav-bar-title-list">
+                            <li class="nav-bar-title"> 
+                                <a href="">
+                                    <span> Real Oviedo: Historia </span>
+                                </a>      
+                            </li>
+                        </ul>                  
+                        <ul class="nav-bar-links" id="nav-bar-links">
+                           
+                            <li class="current-page void-li"> 
+                                <a href="">
+                                    <span> Option 2 </span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                     <span> Historia </span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                     <span> Primera división </span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Balance (1a, 2a, 2a B, y 3a) </span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Copa </span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Derbies </span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Entrenadores </span>
+                                </a>      
+                            </li>
+
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Goleadores </span>
+                                </a>      
+                            </li>
+
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Jugadores internacionales </span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Jugadores extranjeros</span>
+                                </a>      
+                            </li>
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Requexon </span>
+                                </a>      
+                            </li>
+
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Señas de identidad </span>
+                                </a>      
+                            </li>
+
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Requexon </span>
+                                </a>      
+                            </li>
+
+                            <li class="current-page"> 
+                                <a href="">
+                                    <span> Requexon </span>
+                                </a>      
+                            </li>
+                        
+                        </ul>
+                        <div class="scroll-bar">
+                            s
+                        </div>
+                    </div> <!-- nav-bar -->

@@ -1,0 +1,3 @@
+Main devices height in px
+
+Iphone 5:
