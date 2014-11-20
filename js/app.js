@@ -2,12 +2,14 @@ var app = {
 
 	navBarOpen:  true,
 
-	init: function(){	
-		var previousMovement = null;
+	init: function(){
 
+		 $("[data-role='panel']").enhanceWithin().panel();
+		
+		var previousMovement = null;		
 
 		$(document).on('move', function(e){
-			app.scroll(e);
+			app.scroll(e);			
 		});
 
 		$('.open-menu').on('tap', function(e){
@@ -33,13 +35,23 @@ var app = {
 			
 	
 		//el fallo que hace... Lo ahce por que si no levantas... sigue siendo el mismo movimiento!!
-		var topPos = $(".nav-links").position().top;	
-			if (event.pageY < app.previousMovement){
+		var topPos = $(".nav-links").css('top');
+			if (event.pageY < app.previousMovement){					
 
-				( $(".nav-bar ul").animate({top: topPos-5+'px'},0) );
-			}else{
-			
-					( $(".nav-bar ul").animate({top: topPos+5+'px'},0) );
+
+				var navLinksBottom = parseInt($('.nav-links').css('top').split('p',1)[0]) + parseInt($('.nav-links')[0].clientHeight) ;
+
+
+	
+				if (navLinksBottom > (parseInt($('.nav-links')[0].clientHeight / 2) ) ) {
+					$(".nav-links").css({top: '-=15px'});				
+				}		
+			}else if(event.pageY > app.previousMovement){
+				if ( ( $('.nav-links').css('top').split("p",1)[0]) < 160 ){
+
+					$(".nav-links").css({top: '+=15px'})
+
+				}
 			}
 
 			app.previousMovement = event.pageY;

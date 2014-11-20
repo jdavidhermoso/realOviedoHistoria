@@ -48,7 +48,101 @@
         <title> Menu testing </title>
     </head>
     <body id="spanish">
-            <div data-role="page">
+            <div id="nav-bar" class="nav-bar" data-role="panel" data-display="overlay">
+                    <div class="nav-title">
+                       <h1> Real Oviedo: Historia </h1>
+                        
+                    </div>
+                    <ul class="nav-links">
+                        <li class="current"> 
+                            <a href="#page1"> 
+                                PAGE 1
+                            </a> 
+                        </li>
+                         <li> 
+                            <a href="#page2"> 
+                                PAGE 2
+                            </a> 
+                        </li>
+                         <li> 
+                            <a href="#"> 
+                                HISTORIA
+                            </a> 
+                        </li>
+                         <li> 
+                            <a href="#"> 
+                                HISTORIA
+                            </a> 
+                        </li>
+                         <li> 
+                            <a href="#"> 
+                                HISTORIA
+                            </a> 
+                        </li>
+                         <li> 
+                            <a href="#"> 
+                                HISTORIA
+                            </a> 
+                        </li>
+                         <li > 
+                            <a href="#"> 
+                                HISTORIA
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                                PRIMERA DIVISIÓN   
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                               BALANCE (1ª, 2ª, 2ªB y 3ª)   
+                            </a> 
+                        </li>
+
+                        <li> 
+                            <a href="#"> 
+                               COPA   
+                            </a> 
+                        </li>
+
+                        <li> 
+                            <a href="#"> 
+                              DERBIES 
+                            </a> 
+                        </li>
+
+                        <li> 
+                            <a href="#"> 
+                                ENTRENADORES  
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                               GOLEADORES 
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                                JUGADORES INTERNACIONES 
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                                JUGADORES EXTRANJEROS 
+                            </a> 
+                        </li> 
+
+                        <li> 
+                            <label for="sound-settings">
+                                Sonido:
+                            </label>
+                            <input type="checkbox" />
+                        </li> 
+                    </ul>
+
+                </div>
+            <div data-role="page" id="page1">
                 <div data-role="header">
                     <div class="header-bar">
                         <a href="#nav-bar" class="open-menu">
@@ -58,92 +152,7 @@
                     </div><!-- header-bar -->
 
                 </div> <!-- data-role="header" -->
-                <div id="nav-bar" class="nav-bar" data-role="panel" data-display="overlay">
-                    <div class="nav-title">
-                       <h1> Real Oviedo: Historia </h1>
-                        
-                    </div>
-                    <ul class="nav-links">
-                        <li class="current"> 
-                            <a href="#page2z"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                         <li class="current"> 
-                            <a href="#page2z"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                         <li class="current"> 
-                            <a href="#page2z"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                         <li class="current"> 
-                            <a href="#page2z"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                         <li class="current"> 
-                            <a href="#page2z"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                         <li class="current"> 
-                            <a href="#page2z"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                         <li class="current"> 
-                            <a href="#page2z"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                        <li> 
-                            <a href="#page2z"> 
-                                PRIMERA DIVISIÓN   
-                            </a> 
-                        </li>
-                        <li> 
-                            <a href="#page2z"> 
-                               BALANCE (1ª, 2ª, 2ªB y 3ª)   
-                            </a> 
-                        </li>
-
-                        <li> 
-                            <a href="#page2z"> 
-                               COPA   
-                            </a> 
-                        </li>
-
-                        <li> 
-                            <a href="#page2z"> 
-                              DERBIES 
-                            </a> 
-                        </li>
-
-                        <li> 
-                            <a href="#page2z"> 
-                                ENTRENADORES  
-                            </a> 
-                        </li>
-                        <li> 
-                            <a href="#page2z"> 
-                               GOLEADORES 
-                            </a> 
-                        </li>
-                        <li> 
-                            <a href="#page2z"> 
-                                JUGADORES INTERNACIONES 
-                            </a> 
-                        </li>
-                        <li> 
-                            <a href="#page2z"> 
-                                JUGADORES EXTRANJEROS 
-                            </a> 
-                        </li> 
-                    </ul>
-                </div>
+                
 
                 <div data-role="main" class="ui-content">
                     askdbajnsdasñ
@@ -151,11 +160,23 @@
                 
             </div> <!-- main page -->
 
-            <div data-role="page" id="page2"> 
+             <div data-role="page" id="page2">
                 <div data-role="header">
-                    aa
+                    <div class="header-bar">
+                        <a href="#nav-bar" class="open-menu">
+                            <i class="fa fa-bars open-menu-icon"></i>  
+                        </a>
+                        Menu Testing               
+                    </div><!-- header-bar -->
+
+                </div> <!-- data-role="header" -->
+                
+
+                <div data-role="main" class="ui-content">
+                    askdbajnsdasñ
                 </div>
-            </div>
+                
+            </div> <!-- main page -->
 
             <script type="text/javascript">
                 app.init();
