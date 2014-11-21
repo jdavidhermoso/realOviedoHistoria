@@ -1,4 +1,17 @@
 /* FONTS */
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/roboto/Roboto-Light-webfont.ttf);
+}
+
+@font-face {
+    font-family: roboto-normal;
+    src: url(../fonts/roboto/Roboto-Medium-webfont.ttf);
+}
+
+
+
 [data-role="page"]{
 	overflow: hidden;
 }
@@ -33,7 +46,9 @@
 
 /* NAV-BAR */
 
-
+h1{
+	font-family: roboto-normal;
+}
 
 .nav-title{
 	position: fixed;
@@ -73,20 +88,40 @@
 
 }
 
-
-
 .nav-links li{
 	margin: 0;
-	padding: 20px;
-	
+	padding: 20px;	
 }
 .nav-links a{
 	text-decoration: none;
 	color: #FFFFFF;
+	font-family: 'roboto-light'
 }
 .nav-links .current{	
 	background-color: #FFFFFF!important;
+	border-radius: 0px 20px 20px 0px;
+	background-image: url('../img/escudo_ro.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 90%;
 }
+
 .current a{
 	color: blue;
+}
+
+.nav-section-title{
+	padding: 10px!important;
+	
+	border-bottom: 3px solid #F9F900;
+	font-family: roboto-normal;
+	font-size: 20px;
+	color:#F9F900;
+	margin-bottom: 15px;
+	background-image: url('../img/escudo_ro.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-position: right 30%;
+	background-color: #FFFFFF;
+
 }
