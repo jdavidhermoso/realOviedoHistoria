@@ -13,18 +13,34 @@ var app = {
 	},//enroutador
 
 	init: function(){
-		
+
+		 $.mobile.defaultPageTransition = 'none';		
 		 $("[data-role='panel']").enhanceWithin().panel();
 		
 		var previousMovement = null;		
 
-		$(document).on('move', function(e){
+		$('.nav-bar').on('move', function(e){
 			app.scroll(e);			
 		});	
 
-		$('.open-menu').on('tap', function(e){
-			
+		$('.open-menu').on('tap', function(e){	
+
 			$(".nav-links").css({top: '160px'});
+		});
+
+		$(".nav-bar").on('panelbeforeopen',function(){
+			$('div.ui-content.article').css({padding:'0px'});
+
+			$('.body').css({overflow:'hidden'});
+
+			$('.opaque').css({display:'block'});
+
+		});
+
+		$(".nav-bar").on('panelclose',function(){
+			$('.body').css({overflow:'auto'});
+			$('div.ui-content.article').css({padding:'1em'});
+			$('.opaque').css({display:'none'});
 		});
 
 		$(document).on('pagecreate',':jqmData(role="page")', function(){
@@ -56,7 +72,7 @@ var app = {
 						app.currentPage = toPage.id;
 						console.log(toPage.id);
 						
-						$(".nav-links li").removeClass('currents');
+						$(".nav-links li").removeClass('current');
 						$("#link-"+app.currentPage).addClass('current');
 								
 
@@ -96,17 +112,17 @@ var app = {
 		
 			if (event.pageY < app.previousMovement){					
 
-
+				//Bottom position of the links list inside de panel
 				var navLinksBottom = parseInt($('.nav-links').css('top').split('p',1)[0]) + parseInt($('.nav-links')[0].clientHeight) ;
 
 	
 				if (navLinksBottom > (parseInt($('.nav-links')[0].clientHeight / 2) ) ) {
-					$(".nav-links").css({top: '-=15px'});				
+					$(".nav-links").css({top: '-=10px'});				
 				}		
 			}else if(event.pageY > app.previousMovement){
 				if ( ( $('.nav-links').css('top').split("p",1)[0]) < 160 ){
 
-					$(".nav-links").css({top: '+=15px'})
+					$(".nav-links").css({top: '+=10px'})
 
 				}
 			}

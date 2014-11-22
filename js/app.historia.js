@@ -2,7 +2,7 @@ app.historia = {
 	pagina: 'historia',
 
 	init: function(){
-		alert("Historia!");
+		console.log('Historia loaded');
 	}
 
 

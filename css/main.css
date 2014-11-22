@@ -1,5 +1,14 @@
 /* FONTS */
-
+.opaque{
+	position: absolute;
+	display: none;
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	z-index: 2;
+	opacity: 0.8;
+}
 @font-face {
     font-family: roboto-light;
     src: url(../fonts/roboto/Roboto-Light-webfont.ttf);
@@ -51,7 +60,9 @@ h1{
 }
 
 .nav-title{
-	position: fixed;
+	position: absolute;
+	top:0;
+	left: 0;
 	padding: 20px;
 	background-image: url('../img/bg-title2.jpg');
 	background-size: cover;
@@ -85,6 +96,7 @@ h1{
 	 overflow-y: hidden;
     -webkit-overflow-scrolling: touch; 
     background-color: blue;
+    z-index: 200000990000000000;
 
 }
 
@@ -124,4 +136,36 @@ h1{
 	background-position: right 30%;
 	background-color: #FFFFFF;
 
+}
+
+.volume{
+	font-size: 30px;
+}
+
+/* Historia */
+
+.article p, .article h1, .article h2, .article h3{
+	text-align: center;
+}
+
+.img {
+	max-width: 200px;
+	margin: 10px;
+	text-align: center;
+}
+
+.img img{
+	max-width: 100%;
+}
+
+.img-long{
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+.img-left{
+	float: left;
+}
+.img-right{
+	float: right;
 }
