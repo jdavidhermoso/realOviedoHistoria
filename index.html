@@ -38,19 +38,22 @@
         <script src="./js/jquery.min.js"> </script>
         <script src="./js/jquery-mobile/jquery.mobile-1.4.4.min.js"> </script>   
         <script src="./js/jquery.event.move.js"> </script>
-        <script src="./js/jquery.event.swipe.js"> </script>   
-        
+        <script src="./js/jquery.event.swipe.js"> </script>          
     
         <script src="./js/app.js"> </script> 
-        <script src="./js/app.historia.js"> </script>
-        <script src="./js/app.primeradivision.js"> </script>
         <script src="./js/app.data.js"> </script>
+        <script src="./js/app.sabiasque.js"> </script>
+        <script src="./js/app.sabiasquelista.js"> </script>
+        <script src="./js/app.historia.js"> </script>
+        <script src="./js/app.info.js"> </script>
+        <script src="./js/app.primeradivision.js"> </script>
+        <script src="./js/app.palmares.js"> </script>
+
+      
     
         <title> Real Oviedo: Historia </title>
     </head>
-    <body id="spanish">
-
-       
+    <body>       
             <div id="nav-bar" class="nav-bar" data-role="panel"  data-display="overlay">
                     <div class="nav-title">
                        <h1> Real Oviedo: Historia </h1>
@@ -58,469 +61,135 @@
                     </div>
                     <ul class="nav-links">
                         <li class="nav-section-title"> CLUB </li>
-                        <li id="link-historia"> 
-                            <a href="#historia" > 
-                                HISTORIA
+                        <li id="link-sabiasque"> 
+                            <a href="#sabiasque" > 
+                                ¿SABÍAS QUE...?
                             </a> 
 
                         </li>
-                         <li  id="link-primeradivision"> 
-                            <a href="#primeradivision"> 
-                               PRIMERA DIVISIÓN
+                        <li id="link-sabiasquelista"> 
+                            <a href="#sabiasquelista"> 
+                                HISTORIAS CURIOSAS
                             </a> 
                         </li>
-                         <li> 
-                            <a href="#"> 
-                                BALANCE (1ª, 2ª, 2ª B y 3ª)
-                            </a> 
-                        </li>
-                         <li> 
-                            <a href="#"> 
-                                COPA
-                            </a> 
-                        </li>
-                         <li> 
-                            <a href="#"> 
-                               DERBIES
-                            </a> 
-                        </li>
-                         <li> 
-                            <a href="#"> 
-                                ENTRENADORES
-                            </a> 
-                        </li>
-                        <li class="nav-section-title"> JUGADORES </li>
-
-
-                         <li > 
-                            <a href="#"> 
-                                HISTORIA
-                            </a> 
-                        </li>
-                        <li> 
-                            <a href="#"> 
-                                PRIMERA DIVISIÓN   
-                            </a> 
-                        </li>
-                        <li> 
-                            <a href="#"> 
-                               BALANCE (1ª, 2ª, 2ªB y 3ª)   
-                            </a> 
-                        </li>
-                        <li class="nav-section-title"> CONFIGURACIÓN </li>
-
-                        <li> 
-                            <a href="#"> 
-                               SONIDO 
-
-                               <p class="volume">
-                                  <i class="fa fa-volume-off"></i> 
-                              
-                                  <i class="fa fa-volume-up"></i> 
-                               </p>
-                            </a> 
-                        </li>
-
-
                         
+                         <li  id="link-historia"> 
+                            <a href="#historia"> 
+                                HISTORIA
+                            </a> 
+                        </li>
+                        <li class="nav-section-title"> INFORMACIÓN</li>
+                        <li id="link-info"> 
+                            <a href="#info"> 
+                              INFO
+                            </a> 
+                        </li>
+                        <li class="nav-section-title"> PROXIMAMENTE </li>
+
+                        <li  id="link-palmares"> 
+                            <a href="#"> 
+                               PALMARÉS
+                            </a> 
+                        </li>
+
+                        <li > 
+                            <a href="#"> 
+                                JUGADORES CON MÁS PARTIDOS
+                            </a> 
+                        </li>
+
+
+                        <li > 
+                            <a href="#"> 
+                               INTERNACIONALES
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                                EXTRANJEROS  
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#"> 
+                               GOLEADORES 
+                            </a> 
+                        </li>
                     </ul>
 
-                </div>
-            <div data-role="page" id="historia">
+            </div>
+
+            <div data-role="page" id="sabiasque">
                 <div data-role="header">
                     <div class="header-bar">
                         <a href="#nav-bar" class="open-menu">
                             <i class="fa fa-bars open-menu-icon"></i>  
                         </a>
-                        Historia             
+                        ¿SABÍAS QUÉ...? 
+
+                        <a  class="reload-page">
+                            <i class="fa fa-repeat reload-page-icon"></i>
+                        </a>    
                     </div><!-- header-bar -->
 
                 </div> <!-- data-role="header" -->
                 
 
-                <div data-role="main" class="ui-content article">
-                <div class="opaque">
-           
+                <div data-role="main" class="ui-content">
+                    <div class="opaque">           
+                    </div>
+ 
+                    <div class="rememberEdu">
+                        <p>  
+                            <i class="fa fa-close close-rememberEdu"></i>
+                            Toda la información es de  realoviedo.info
+                        </p>
+                        
+                    </div>
+                    <div class="sabiasque-content">
+                        
+                        <img src="./img/loading.gif" class="loading-logo" />
+                        <p class="loading-text">
+                            Cargando...
+                        </p>
+                        
+                    </div>
+
                 </div>
+                
+            </div> <!-- sabiasque -->
 
-                <h1>Los orígenes</h1>
+            <div data-role="page" id="sabiasquelista">
+                <div data-role="header">
+                    <div class="header-bar">
+                        <a href="#nav-bar" class="open-menu">
+                            <i class="fa fa-bars open-menu-icon"></i>  
+                        </a>
+                        HISTORIAS CURIOSAS
 
-                <p>
-                    <figure class="img img-left" >                
-                        <img src="./img/historia/oviedofc1903.jpg" />
-                        <figcaption>
-                           Oviedo Foot-ball (1903)
-                        </figcaption>
-                    </figure>
-                    Consta el Oviedo Foot-ball como el primer equipo de fútbol que existió en Oviedo, en 1903, como consecuencia de la llegada de varios jóvenes como Pedro RUBÍN, tras haber estudiado en Hampstead (Inglaterra). Jugaba sus partidos en el campo de maniobras (un terreno para todo), ubicado en la zona de Llamaquique.
-                </p>
+                        <a  class="backToList">
+                            <i class="fa fa-arrow-left back-page-icon"></i>
+                        </a>    
+                    </div><!-- header-bar -->
 
-                <p>
-                    <figure class="img img-right" >                
-                        <img src="./img/historia/Oscar.jpg" />
-                        <figcaption>
-                           Óscar Álvarez
-                        </figcaption>
-                    </figure>                     
-                      Por un lado estaba el Real Stadium Club Ovetense. Era el equipo «popular» de Oviedo. 
-                      Se fundó hacia 1914 y jugaba en el campo de Llamaquique hasta que en 1923 se trasladó al campo de Vetusta. En sus filas jugaron Santiago BERNABÉU y ÓSCAR Álvarez —habitual suplente de Ricardo ZAMORA en la selección española, como ocurrió en los JJ.OO. de París en 1924—.                    
-                      Se alzó con el título de Campeón de Asturias en la temporada 1924/25 derrotando al Sporting de Gijón (dominador del torneo hasta entonces). Vestía con camisetas de franjas verticales azules y amarillas y pantalón negro.
-                </p>
-                <p>
-                     Por el otro, el Real Club Deportivo de Oviedo (surgido de una escisión del anterior), fundado en abril de 1919 y que tras compartir campo con su eterno rival al principio, pronto pasó a jugar en el campo de Teatinos. Era considerado el equipo de la clase social más alta del Oviedo de los años veinte. Su indumentaria habitual consistía en camiseta de rayas verticales azules y blancas —a veces toda blanca— y pantalón negro. Vistió su elástica el internacional español José Luis ZABALA (que marcó 4 goles en sus 4 partidos con la selección española), también jugador del Real Oviedo tras la fusión.
-                </p>
-
-                <figure class="img img-long" >                
-                    <img src="./img/historia/rstadium.jpg" />
-                     <figcaption>
-                           R. Stadium
-                    </figcaption>
-                    <img src="./img/historia/rcdeportivo.jpg" />                   
-                    <figcaption>
-                           R.C. Deportivo
-                    </figcaption>
-                </figure>
-
-                <h2> Nació el Real Oviedo</h2>
-
-                <p>
-                     El 26 de marzo de 1926 se celebró en los locales del diario La Voz de Asturias, la reunión que acordó la fusión de ambos equipos, ratificando el acuerdo previo al que habían llegado los representantes de ambas entidades, tras la aceptación de los respectivos socios en las asambleas celebradas. Se estableció que el azul fuese el color de la entidad (el color de la ciudad), que el escudo tendría que llevar la imagen de la Cruz de los Ángeles y que Don Carlos Tartiere fuese el primer presidente, entre otros acuerdos. Se ponía fin a una rivalidad que, en muchas ocasiones, había sobrepasado los límites razonables.
-
-                    <figure class="img img-long" > 
-                        <img src="./img/historia/actafundacional.jpg" />                   
-                        <figcaption>
-                          Acta fundacional
-                        </figcaption>
-                    </figure>
-                </p>
-
-                <p>
-                    <figure class="img img-left" > 
-                        <img src="./img/historia/primerrealoviedo1926.jpg" />                   
-                        <figcaption>
-                          Primer Real Oviedo - 1926
-                        </figcaption>
-                    </figure>
-                    El recién nacido Real Oviedo disputó su primer partido el 1 de mayo de 1926 frente al Arenas de Guecho, perdiendo por 6 a 4 (JUSTO hizo el 1-0, primer gol de la historia del nuevo club). Al día siguiente volvieron a enfrentarse y en esta ocasión el resultado fue de 2 a 1 favorable a los oviedistas.
-
-                    Consiguió el objetivo de arrebatarle al Sporting el dominio en Asturias (el campeonato regional era la principal competición junto a la Copa de España, pues hasta 1929 no se inició el Campeonato de Liga), proclamándose campeón de Asturias casi siempre (sólo dejó de ganar tres: temporadas 1926/27, 1929/30 y 1930/31), hasta que se dejó de disputar tras la guerra.
-                </p>
-
-                <p>
-                  
-                     Al comienzo del torneo liguero en la temporada 1928/29, quedó encuadrado en la 2ª división tras perder una eliminatoria por una plaza en 1ª contra el Betis.
-                </p>
-
-                <h2> Objetivo: Primera división </h2>
-                <p>
-        
-                    El objetivo, desde el principio, era la 1ª división, y por ello se realizaron fichajes que alcanzaban cifras poco usuales para la época. Así, en 1929 se invierten 45.000 ptas. en los fichajes de GALLART y TONIJUÁN (a la postre sería el entrenador del ascenso tres años después), en 1930, más de 9.000 ptas. en el delantero del Tolosa Isidro LÁNGARA (que se convertiría en uno de los mejores artilleros del fútbol mundial del momento) o, ya para debutar en la máxima categoría, se contrata a un joven de 19 años recién cumplidos del Sporting llamado «HERRERITA» (su ficha de 30.000 ptas. causaría sensación en un fútbol en el que únicamente se habían movido cifras superiores con las 150.000 ptas. desembolsadas por el R. Madrid al contratar a Ricardo ZAMORA) que había maravillado a Don Carlos Tartiere en el partido jugado por los sportinguistas en Buenavista en la recién terminada liga (3-3 fue el resultado de aquel partido y el único punto que se llevó un visitante aquella temporada). 
+                </div> <!-- data-role="header" -->
                 
 
-                    En 1934 se superarían esas cifras con fichajes como los de PENA —también del Sporting— o SOLADRERO.
-                </p>
-
-                <figure class="img img-long" > 
-                    <img src="./img/historia/pena.jpg" />                   
-                    <figcaption>
-                        Pena
-                    </figcaption>
-
-                     <img src="./img/historia/herrerita.jpg" />                   
-                    <figcaption>
-                        Herrerita
-                    </figcaption>
-                </figure>   
-
-                <p>                    
-                    <figure class="img img-left" />                      
-
-                         <img src="./img/historia/debutenprimera.jpg" />                   
-                        <figcaption>
-                            Debut en Primera División
-                        </figcaption>
-                    </figure>
-                    El debut en División de Honor se produjo en un nuevo campo, dejando atrás el de Teatinos, pues el 24 de abril de 1932, las selecciones de España y Yugoslavia inauguraron el Estadio de Buenavista (2-1 fue el resultado), donde el Real Oviedo pasaría a disputar sus encuentros. Disponía de una tribuna única hasta la fecha, sin columnas que sujetasen la visera (obra del ingeniero Sr. Sánchez del Río). Fué el delantero azul Isidro LÁNGARA —debutante ese día—, quien tuvo el honor de marcar el primer gol a los 20 minutos de partido.
-                </p>
-
-                <p>
-                    <figure class="img img-right" />                      
-
-                         <img src="./img/historia/gallart.jpg" />                   
-                        <figcaption>
-                            Gallart
-                        </figcaption>
-                    </figure>
-                     Poco después llegaría el ascenso frente al At. Madrid y el 5 de noviembre de 1933 el jugador de Barcelona VANTOLRÁ marcaría el primer gol que en partido de 1ª división se vería en Buenavista. Ese día el Real Oviedo vencería al Barcelona por 7-3 (GALLART hizo a los 17 minutos de partido el primer gol ovetense —era el 1 a 2, tras el  citado del Barcelona a los 6 minutos y otro posterior—).
-                </p>          
-
-                <p>
-                    Eran días felices en lo futbolístico en la capital del Principado, haciéndose famosa la delantera llamada «eléctrica» por su facilidad goleadora. La integraban «CASUCO», GALLART, LÁNGARA, «HERRERITA» y «EMILÍN» (lograron en los 62 partidos de esas tres primeras temporadas nada menos que 174 goles). Hay que decir que esta fué la 2ª «eléctrica», de las tres que hubo; «CASUCO», GALLART, LÁNGARA, GALÉ e INCIARTE conformaron la 1ª, la que logró el ascenso y «ANTÓN», «GOYÍN», ECHEVARRÍA, «HERRERITA» y «EMILÍN», la 3ª , ya tras la guerra.
-
-                    <figure class="img img-left" />
-                         <img src="./img/historia/langaraherreritavsarbitro.jpg" />                   
-                        <figcaption>
-                            Langara y Hererrita se encaran con el arbitro.
-                        </figcaption>
-                    </figure>
-                </p>
-
-                <p>
-                    Pero la Guerra Civil truncó de pleno el camino de un equipo llamado a logros importantes. En la temporada 1939/40, al Real Oviedo se le concede la «gracia» de reservarle la plaza, no compitiendo ese año, ante la situación del campo y de la ciudad tras la contienda. A cambio, el club tuvo que ceder a sus jugadores a otros equipos («HERRERITA», «EMILÍN» y RIERA se fueron al Barcelona, GALLART y «CALICHI» al Racing del Ferrol, «ANTÓN» y SOLADRERO al R. Zaragoza, PENA al Sporting, etc.).
-                </p>
-
-                <p>
-                    Pese a su vuelta ya nada sería igual en la temporada 40/41. LÁNGARA estaba en Argentina y la guerra había provocado importantes bajas.
-                </p>
-
-                <p>
+                <div data-role="main" class="ui-content">
+                    <div class="opaque">  
+                    </div> 
                     
-                    La década de los 40 transcurre más que aceptablemente, con el equipo en 1ª, incluso en zonas altas de la tabla —aunque sin el nivel de la década anterior— hasta que coincidiéndo con el fallecimiento de Don Carlos Tartiere llega el primer descenso, en el año 1950.
-                </p>
+                    <div class="sabiasquelista-content">
+                        <img src="./img/loading.gif" class="loading-logo" />   
+                        <p class="loading-text">
+                            Cargando...
+                        </p>      
+                        
+                    </div>
 
-                <p>
-                    Comienza una larga travesía de más de 35 años en los cuales el Real Oviedo se convierte en un equipo ascensor y muy irregular en el panorama futbolístico español, con algún que otro importante logro (en la temporada 1962/63 se clasifica, por tercera vez en su historia, 3º en 1ª división) y varias decepciones.
-
-                    <figure class="img img-long" />
-                         <img src="./img/historia/tercerosenliga6263.jpg" />                   
-                        <figcaption>
-                            3º en Primera división.
-                        </figcaption>
-                    </figure>
-                </p>
-
-                <h2>
-                    El Real Oviedo se muda.
-                </h2>
-
-                <p>
-                    En 1954 el campo es vendido al Ayuntamiento por una suma poco menos que simbólica, adquiriendo éste a cambio, el compromiso de asegurarle al club de por vida un escenario digno. Desde 1958 pasaría a denominarse Estadio Carlos Tartiere, campo que sería totalmente reformado con motivo de la celebración del Campeonato del Mundo en el año 1982.
-                </p>
-                <h2>
-                    Los 80 trajeron un título, y el regreso a Primera División.
-                </h2>
-                <p>
-                    Obtiene su único título oficial en la temporada 1984/85 al proclamarse vencedor de la Copa de la Liga de 2ª división (torneo de efímera duración del que sólo se disputaron cuatro ediciones).
-                </p>
-                <!-- Imagen del título de 2ª !! -->
-
-                A finales de los 80, la entidad vive un renacer volviendo a 1ª división (después de 12 años de 2ª división, y un paso por 2ª B en los años 70).
+                </div>
                 
-                <h2> Llegaron los 90, y la UEFA </h2>
-
-                <!-- algún video de ese partido? -->
-
-               
-
-
-                <p>
-
-                
-                    <figure class="img img-right" />                      
-
-                         <img src="./img/historia/buenoviedo9091.jpg" />                   
-                        <figcaption>
-                            Genoa - Real Oviedo - 1991
-                        </figcaption>
-                    </figure>
-                    El 19 de Septiembre de 1991, el Real Oviedo debuta en una competición europea venciendo al Geona italiano por 1-0 (gol de Bango), en 1/32 de final de la UEFA.
-
-
-                </p>
-                <p>
-                    En el partido de vuelta, perdió por 3-1 en Italia, recibiendo el gol decisivo al final del encuentro, y tras sufrir un arbitraje tremendamente perjudicial.
-
-                    <figure class="img img-left" />                      
-
-                         <img src="./img/historia/genoaoviedo1991.jpg" />                   
-                        <figcaption>
-                            Genoa - Real Oviedo - 91/92
-                        </figcaption>
-                    </figure>
-                </p>
-
-                <h2> Conversión en SAD </h2>
-                <p>
-                    En 1992 se convierte en Sociedad Anónima Deportiva, con un capital social de 605 millones de ptas.
-                </p>
-                <!-- algún video de la conversión -->
-                <h2> Los 2000, nueva casa, y comienza el sufrimiento.</h2>
-
-                <p>
-                    Abandonando la ubicación de Buenavista, donde el club llevaba jugando bastante más de medio siglo, el 20 de septiembre de 2000 se inaugura oficialmente el Nuevo Estadio Carlos Tartiere con un partido entre el Real Oviedo y el Partizán de Belgrado (0 - 2).
-
-                    Tres días antes, el jugador de la U.D. Las Palmas Robert JARNI había logrado de penalty el primer gol en partido oficial disputado. LOSADA hizo el primer gol oviedista concluyendo el partido 2 - 2.
-                </p>
-
-                <h2> Descenso a 2ª y a los barrizales. </h2>
-
-                <p> 
-
-                     <figure class="img img-right" />                      
-
-                         <img src="./img/historia/escudo75aniversario.jpg" />                   
-                        <figcaption>
-                            Escudo del 75º aniversario del Real Oviedo
-                        </figcaption>
-                    </figure>
-
-                    Coincidiendo con la conmemoración del 75º aniversario de la fundación del club se pone fin al más largo periodo continuado en 1ª división (13 temporadas) con un descenso que acrecentaría notablemente los problemas económicos generalizados en el mundo del fútbol, hasta el punto de surgir el riesgo de una inminente desaparición que, por si no tuviese suficiente motivación en la nefasta gestión económica realizada por el máximo accionista Celso González (con Eugenio Prieto en la presidencia), contó con las disputas políticas y la hostilidad del equipo de gobierno del Ayuntamiento de la ciudad como acicate para dificultar aún más la ya de por sí crítica situación. La labor del presidente Manuel Lafuente (quien ccedió al scargo tras el cobarde abandono de los dirigentes responsables de la catástrofe) permitió la continuidad del Real Oviedo.
-                </p>
-
-                <p>
-                    Tras chantajear vilmente a todo el oviedismo con sus continuos cambios de criterio y de exigencias, motivadas por sus intereses económicos personales (acuerdos previos con otros clubes supeditados al desmoronamiento del Real Oviedo), el 1 de agosto de 2003 se consumaba un segundo descenso (esta vez administrativo) que condenaba al Real Oviedo a la 3ª división, en pleno proceso de suspensión de pagos y ponía la supervivencia de la sociedad más en entredicho que nunca.
-                </p>
-
-                <p>
-                    Con el equipo en 3ª división, Gabino de Lorenzo, alcalde de Oviedo, decidió que el Real Oviedo debía desaparecer.
-                    Ignoró el acuerdo de apoyo al Real Oviedo que había firmado en campaña electoral, y refundó el Astur CF como Oviedo ACF, que echó a andar el 14 de Agostro de 2003.
-                    El recién fundado Oviedo ACF nació con un escudo y colores idénticos a los del Real Oviedo.
-                    También se intentó que el Real Oviedo dejase el Nuevo estadio Carlos Tartiere para que fuese el estadio del Oviedo ACF.
-                </p>
-
-                <p>
-                    El Real Oviedo no había desaparecido, y paralelamente, parte de su afición seguía luchando por salvar al club.            
-                </p>
-                <p>
-                    Los aficionados del Real Oviedo hicieron tareas de albañilería, fontanería, jardinería, electricidad en el Requexón (ciudad deportiva) y en el estadio Carlos Tartiere.
-                </p>
-                <p>
-                    También hicieron rifas, mercadillos, y donaciones para ayudar a la supervivencia económica del club.
-                </p>
-                <p>
-                    En éste proceso de salvación del club tuvo un papel especialmente importante la peña Symmachiarii 1994.
-                </p>
-                
-                <p>
-                    En la temporada 2003/2004 se consiguieron 10.871 abonados, 16.573 espectadores en el partido contra el Oviedo ACF, y 20.127 en la promoción de ascenso, en la que el Real Oiedo no consiguió el ascenso.
-                    Fue la rebelión del Oviedismo frente a los que pensaba y/o deseaban que el club desapareciera.                                 
-                </p>
-
-                 <figure class="img img-long" />
-
-                 <!-- video -->
-
-                        <figcaption>
-                          Video
-                        </figcaption>
-                    </figure>
-
-                <p>
-                    Tras superar con éxito el proceso de suspensión de pagos, y batiendo sus propios records ( 13.000 abonados en 3ª y 25.000 personas en un partido de play-off a 2ª B), debería haber empezado el proceso de volver al fútbol profesional.
-                </p>
-
-                <p>
-                    Sin embargo, volvió la incertidumbre al futuro del club. Celso González recuperó la titularidad del paquete accionarial a causa de una resolución judicial. 
-                    Y con Celso, volvió el riesgo de volver a descender a 3ª división.
-                </p>
-
-                <p>
-                    A finales del año 2006, después de una ampliación de capital, cambió en mapa accionarial del club con nuevo grupo al frente del mismo.
-                </p>
-
-                <p>
-                    Pero éste cambio, lejos de mejorar la situación (deportiva, económica, y social) del Real Oviedo, no hizo más que empeorarla.
-                </p>
-                <p>
-                    Toni Fidalgo dimitió del cargo de presidente solo tres semanas de acceder al mismo. La actuación del consejo de administración era más que deficiente.
-                </p>
-                <p>
-                    Finalmente, en la temporada 2007, el Real Oviedo descendía por primera vez en su historia de forma deportiva, a 3ª división.
-                </p>
-
-                <p>
-                    Tras otra ampliación, el capital social del club quedó fiado en 4.716.855 €
-                </p>
-
-                <p>
-                    Cambió el consejo de admón. del club. El nuevo equipo gestor estaba encabezado por Alberto Gonzalez.
-                </p>
-
-                <p>
-                    Y la situacíón económica volvía a ser penosa. 
-                </p>
-                <p>
-                    Deportivamente, las cosas no eran mucho mejor. Se tardaron 2 años en conseguir el ascenso de 3ª a 2ª División B.
-                </p>
-
-                <p>
-                    El club volvía a estar cerca de desaparecer por la gestión de Alberto González. Y no ayudaba el hecho de que recibía poco apoyo desde el gobierno regional y desde el ayto. de Oviedo.                    
-                </p>
-
-                <p>
-                   La temporada 2008, el Real Oviedo cayo contra el Caravaca de la Cruz (Murcia) en el play-off de ascenso a 2ª División B. Tocaba voler a levantarse, y perseguir el ascenso de nuevo.
-                </p>
-                <p>
-                    La temporada de 2009 será recordada por el ascenso en Mallorca frentre al filial Balear.
-                    La ida se celebraría en Oviedo, y la vuelta en Mallorca. Una semana antes del partido de vuelta (31 de Mayo de 2009), la afición azul ya había agotado todos los vuelos a Mallorca desde Santiago de Compostela, Oviedo, Santander, y Bilbao.
-                </p>
-                <p>
-                    El partido de ida, recogió la asisténcia de más de 27.000 personas (esa jornada no se registró esa entrada en ningún campo de 2ª División).
-                    Terminó 1-0 con gol de penalti de Diego Cervero, espíritu y alma del Oviedismo.                    
-                </p>     
-
-                <p>
-                    1.500 Oviedistas poblaron el fondo norte del estadio de Son Moix, en Palma, para ver ascender al Real Oviedo a 2ª División B.
-                </p>
-
-                <p>
-                    El Mallorca B se adelantó en la (primera / segunda) parte, terminando el partido y la prorroga con un resultado de 1-0.                    
-                </p>
-                <p>
-                    Fue un partido de infarto, que difícilmente olvidarán ni los que lo vivieron en vivo, y los que tuvieron que verlo desde Oviedo.
-                </p>
-                <p>
-                    Se llegó a la tanda de penalties. Marcó el Real Oviedo. Marcó el Mallorca B. Y asi hasta el último y decisivo penalti que lanzaría Kevin (Mallorca B).                    
-                </p>
-                <p>
-                    Paró Onaitz Auléstia. El Real Oviedo volvía a ser equipo de 2ª División B.
-                </p>
-                <p>
-                    Puede parecer que un asceno a 2ª división B no tiene valor como para celebrarlo de la forma que lo hizo la afición azul.
-                    Sin embargo, hay que recordar que esa afición había vivido en dos ocasiones la casi desaparición del club.
-                </p>
-                <p>
-                    En Enero de 2011, parecía posible la salida de Alberto Gonzalez (máximo accionista). Surgió una oferta para su paquete accionarial, del grupo Mexicano Pegaso.
-                </p>
-                <p>
-                    Alberto Gonzalez ocultó información a Pegaso sobre una pignoración (bla bla bla) que pesaba sobre las acciones.                     
-                </p>
-                <p>
-                    Por tanto, a pesar de estar en 2ª B, la situación deportiva, económica, y social del club era caótica.
-                </p>  
-                <p>
-                    En 2012 llega a la alcaldía de la ciudad Agustín Iglesias Caunedo. El consistorio asumió su responsabilidad como segundo máximo accionista del Real Oviedo.
-                </p>
-                <p>
-                    La APARO colaboró (Asociación de Peñas del Real Oviedo), juntando a los pequeños accionistas para superar el porcentaje que controlaba Alberto González, fugado del país, y en estado de busca y captura por delitos fiscales.
-                </p>
-                <p>
-                    En Julio de 2012 se consiguió forzar el cambió en la cúpula dirigente del club, y volvió a la presidencia del Real Oviedo Toni Fidalgo.
-                </p>
-
-                <p>
-                    En el consejo de admón había Oviedistas de corazón como Pedro Zuazua y Juan Ramón González, Hugo López o Sabino López.
-
-                    En solo tres meses pusieron en orden la entidad para una nueva ampliación de capital para evitar la causa de disulución, en la que iba a estar en juego, una vez más, el futuro del Real Oviedo.
-                </p>
-
-                <p>
-                    La afición del Real Oviedo volvió a ser clave en la salvación del club. 
-                    A través de las redes sociales, y gracias a figuras como Santi Cazorla (Arsenal FC) , Michu (Swansea City FC) , y Adrían (Atco. Madrid), se dió a conocer la historia del club en todo el mundo.
-
-                </p>
-
-                <p> 
-                    Gente de Oviedo, Asturias, España, y de todo el mundo aportaron dinero en compra de acciones hasta llegar a 2 millones de € de ampliación.                    
-                </p>
-                <p>
-                    Por su parte, el grupo empresarial del mexicano Carlos Slim aportó la misma cantidad, asombrado por la repercusión del Real Oviedo en el mundo.
-                </p>
-
-
-            </div>
-                
-            </div> <!-- main page -->
+            </div> <!-- palmares -->
+            
 
             <div data-role="page" id="primeradivision">
                 <div data-role="header">
@@ -537,13 +206,538 @@
                 <div data-role="main" class="ui-content">
                     <div class="opaque">
            
-                </div>
+                    </div>
                 </div>
                 
+            </div> <!-- main page -->
+
+             <div data-role="page" id="info">
+                <div data-role="header">
+                    <div class="header-bar">
+                        <a href="#nav-bar" class="open-menu">
+                            <i class="fa fa-bars open-menu-icon"></i>  
+                        </a>
+                       INFO    
+                    </div><!-- header-bar -->
+
+                </div> <!-- data-role="header" -->
+                
+
+                <div data-role="main" class="ui-content">
+                    <div class="opaque">
+           
+                    </div>
+
+                    <h1> Real Oviedo: Historia </h1>
+                
+
+                     <ul>
+                        <li> Juan David Hermoso </li>                       
+                    </ul>
+                
+
+                    <ul class="sobrelaApp">
+                        <li> Información de 'Real Oviedo datos' </li>
+                        <li>  Agradecimiento especial a  Edu Muñoz. </li>
+                        <li> No consume datos 3g </li>
+                        <li> Puedes usarla sin conexión a internet.</li>                        
+                    </ul>                     
+                 
+                </div>
+
+
+                
+            </div> <!-- info page -->
+
+            <div data-role="page" id="palmares">
+                <div data-role="header">
+                    <div class="header-bar">
+                        <a href="#nav-bar" class="open-menu">
+                            <i class="fa fa-bars open-menu-icon"></i>  
+                        </a>
+                        Palmarés            
+                    </div><!-- header-bar -->
+
+                </div> <!-- data-role="header" -->
+                
+
+                <div data-role="main" class="ui-content">
+                    <div class="opaque">           
+                    </div>
+
+                    <h1> <i class="fa fa-soccer-ball-o"></i> LIGA </h1>    
+                    <div data-role="collapsible" data-collapsed="true" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content">
+                        <h3 class="ui-collapsible-heading"> PARTIDOS OFICIALES</h3>
+                        <table data-role="table"class="ui-responsive table" id="partidosOficialesDisputados">
+                        <thead>
+                          <tr>
+                            <th> División </th>
+                            <th> Temporadas </th>
+                            <th> J </th>
+                            <th> G </th>
+                            <th> E </th>
+                            <th> P </th>
+                            <th> GF </th>
+                            <th> GC </th>
+                            <th> PUNTOS </th>                            
+                          </tr>
+                        </thead>
+                       <tbody>
+
+                       </tbody>
+                        </table>
+
+                    </div>
+
+                    <div data-role="collapsible" data-collapsed="true" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content">
+                        <h3 class="ui-collapsible-heading"> LOGROS </h3>
+
+                        <ul>
+                            <li> Primera división: 3ª</li>
+                            <li> Segunda división: 1ª </li>
+                            <li> Segunda división B: 2ª </li>
+                            <li> Tercera división: 1ª </li>
+                        </ul>
+                    </div>
+                    
+
+                    <h1> <i class="fa fa-trophy"> </i> COPA </h1>
+
+                     <div data-role="collapsible" data-collapsed="true" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content">
+                        <h3 class="ui-collapsible-heading"> LOGROS </h3>
+
+                        <h4> TÍTULOS </h4>
+
+                        <ul>
+                            <li> Copa de la liga: 1984 / 1985</li>                        
+                        </ul>
+
+                        <h4> MÁXIMA RONDA ALCANZADA</h4>
+
+                        <ul>
+                            <li> Semifinales: 1934, 1946  </li>
+                        </ul>
+                    </div>
+
+                    <h1> <i class="fa fa-star"></i> UEFA </h1>
+
+                    <div data-role="collapsible" data-collapsed="true" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content">
+                        <h3 class="ui-collapsible-heading"> LOGROS </h3>
+
+                        <h4> PARTICIPACIONES</h4>
+
+                        <ul>
+                            <li> 1/16 - GENOA: 1 - 0, 3-1</li>                        
+                        </ul>
+
+                        
+                    </div>
+                </div> <!-- main ui-content -->
+                
+            </div> <!-- palmares -->
+
+            <div data-role="page" id="historia">
+                <div data-role="header">
+                    <div class="header-bar">
+                        <a href="#nav-bar" class="open-menu">
+                            <i class="fa fa-bars open-menu-icon"></i>  
+                        </a>
+                        HISTORIA                  
+                               
+                    </div><!-- header-bar -->
+                </div> <!-- data-role="header" -->               
+
+                <div data-role="main" class="ui-content article">
+                    <div class="opaque">
+               
+                    </div>
+
+                    <h1>Los orígenes</h1>
+
+                    <p>
+                        <figure class="img img-left" >                
+                            <img src="./img/historia/oviedofc1903.jpg" />
+                            <figcaption>
+                               Oviedo Foot-ball (1903)
+                            </figcaption>
+                        </figure>
+                    </p>
+                    <p>
+                        Consta el Oviedo Foot-ball como el primer equipo de fútbol que existió en Oviedo, en 1903, como consecuencia de la llegada de varios jóvenes como Pedro RUBÍN, tras haber estudiado en Hampstead (Inglaterra). Jugaba sus partidos en el campo de maniobras (un terreno para todo), ubicado en la zona de Llamaquique.
+                    </p>
+
+                    <p>
+                        <figure class="img img-right" >                
+                            <img src="./img/historia/Oscar.jpg" />
+                            <figcaption>
+                               Óscar Álvarez
+                            </figcaption>
+                        </figure>  
+                    </p>
+                    <p>  
+
+                          Por un lado estaba el Real Stadium Club Ovetense. Era el equipo «popular» de Oviedo. 
+                          Se fundó hacia 1914 y jugaba en el campo de Llamaquique hasta que en 1923 se trasladó al campo de Vetusta. En sus filas jugaron Santiago BERNABÉU y ÓSCAR Álvarez —habitual suplente de Ricardo ZAMORA en la selección española, como ocurrió en los JJ.OO. de París en 1924—.                    
+                          Se alzó con el título de Campeón de Asturias en la temporada 1924/25 derrotando al Sporting de Gijón (dominador del torneo hasta entonces). Vestía con camisetas de franjas verticales azules y amarillas y pantalón negro.
+                    </p>
+                    <p>
+                         Por el otro, el Real Club Deportivo de Oviedo (surgido de una escisión del anterior), fundado en abril de 1919 y que tras compartir campo con su eterno rival al principio, pronto pasó a jugar en el campo de Teatinos. Era considerado el equipo de la clase social más alta del Oviedo de los años veinte. Su indumentaria habitual consistía en camiseta de rayas verticales azules y blancas —a veces toda blanca— y pantalón negro. Vistió su elástica el internacional español José Luis ZABALA (que marcó 4 goles en sus 4 partidos con la selección española), también jugador del Real Oviedo tras la fusión.
+                    </p>
+                    <p>
+                        <figure class="img img-long" >                
+                            <img src="./img/historia/rstadium.jpg" />
+                             <figcaption>
+                                   R. Stadium
+                            </figcaption>
+                            <img src="./img/historia/rcdeportivo.jpg" />                   
+                            <figcaption>
+                                   R.C. Deportivo
+                            </figcaption>
+                        </figure>                        
+                    </p>
+                    
+
+                    <h2> Nació el Real Oviedo</h2>
+
+                    <p>
+                         El 26 de marzo de 1926 se celebró en los locales del diario La Voz de Asturias, la reunión que acordó la fusión de ambos equipos, ratificando el acuerdo previo al que habían llegado los representantes de ambas entidades, tras la aceptación de los respectivos socios en las asambleas celebradas. Se estableció que el azul fuese el color de la entidad (el color de la ciudad), que el escudo tendría que llevar la imagen de la Cruz de los Ángeles y que Don Carlos Tartiere fuese el primer presidente, entre otros acuerdos. Se ponía fin a una rivalidad que, en muchas ocasiones, había sobrepasado los límites razonables.
+
+                        <figure class="img img-long" > 
+                            <img src="./img/historia/actafundacional.jpg" />                   
+                            <figcaption>
+                              Acta fundacional
+                            </figcaption>
+                        </figure>
+                    </p>
+
+                    <p>
+                        <figure class="img img-left" > 
+                            <img src="./img/historia/primerrealoviedo1926.jpg" />                   
+                            <figcaption>
+                              Primer Real Oviedo - 1926
+                            </figcaption>
+                        </figure>
+                    </p>
+
+                    <p>
+                        El recién nacido Real Oviedo disputó su primer partido el 1 de mayo de 1926 frente al Arenas de Guecho, perdiendo por 6 a 4 (JUSTO hizo el 1-0, primer gol de la historia del nuevo club). Al día siguiente volvieron a enfrentarse y en esta ocasión el resultado fue de 2 a 1 favorable a los oviedistas.
+
+                        Consiguió el objetivo de arrebatarle al Sporting el dominio en Asturias (el campeonato regional era la principal competición junto a la Copa de España, pues hasta 1929 no se inició el Campeonato de Liga), proclamándose campeón de Asturias casi siempre (sólo dejó de ganar tres: temporadas 1926/27, 1929/30 y 1930/31), hasta que se dejó de disputar tras la guerra.
+                    </p>
+
+                    <p>
+                      
+                         Al comienzo del torneo liguero en la temporada 1928/29, quedó encuadrado en la 2ª división tras perder una eliminatoria por una plaza en 1ª contra el Betis.
+                    </p>
+
+                    <h2> Objetivo: Primera división </h2>
+                    <p>
+            
+                        El objetivo, desde el principio, era la 1ª división, y por ello se realizaron fichajes que alcanzaban cifras poco usuales para la época. Así, en 1929 se invierten 45.000 ptas. en los fichajes de GALLART y TONIJUÁN (a la postre sería el entrenador del ascenso tres años después), en 1930, más de 9.000 ptas. en el delantero del Tolosa Isidro LÁNGARA (que se convertiría en uno de los mejores artilleros del fútbol mundial del momento) o, ya para debutar en la máxima categoría, se contrata a un joven de 19 años recién cumplidos del Sporting llamado «HERRERITA» (su ficha de 30.000 ptas. causaría sensación en un fútbol en el que únicamente se habían movido cifras superiores con las 150.000 ptas. desembolsadas por el R. Madrid al contratar a Ricardo ZAMORA) que había maravillado a Don Carlos Tartiere en el partido jugado por los sportinguistas en Buenavista en la recién terminada liga (3-3 fue el resultado de aquel partido y el único punto que se llevó un visitante aquella temporada). 
+                    
+
+                        En 1934 se superarían esas cifras con fichajes como los de PENA —también del Sporting— o SOLADRERO.
+                    </p>
+
+                    <figure class="img img-long" > 
+                        <img src="./img/historia/pena.jpg" />                   
+                        <figcaption>
+                            Pena
+                        </figcaption>
+
+                         <img src="./img/historia/herrerita.jpg" />                   
+                        <figcaption>
+                            Herrerita
+                        </figcaption>
+                    </figure>   
+
+                    <p>                    
+                        <figure class="img img-left" />                      
+
+                             <img src="./img/historia/debutenprimera.jpg" />                   
+                            <figcaption>
+                                Debut en Primera División
+                            </figcaption>
+                        </figure>
+                    </p>
+                    <p>
+                        El debut en División de Honor se produjo en un nuevo campo, dejando atrás el de Teatinos, pues el 24 de abril de 1932, las selecciones de España y Yugoslavia inauguraron el Estadio de Buenavista (2-1 fue el resultado), donde el Real Oviedo pasaría a disputar sus encuentros. Disponía de una tribuna única hasta la fecha, sin columnas que sujetasen la visera (obra del ingeniero Sr. Sánchez del Río). Fué el delantero azul Isidro LÁNGARA —debutante ese día—, quien tuvo el honor de marcar el primer gol a los 20 minutos de partido.
+                    </p>
+
+                    <p>
+                        <figure class="img img-right" />                      
+
+                             <img src="./img/historia/gallart.jpg" />                   
+                            <figcaption>
+                                Gallart
+                            </figcaption>
+                        </figure>
+                    </p>
+                    <p>
+                         Poco después llegaría el ascenso frente al At. Madrid y el 5 de noviembre de 1933 el jugador de Barcelona VANTOLRÁ marcaría el primer gol que en partido de 1ª división se vería en Buenavista. Ese día el Real Oviedo vencería al Barcelona por 7-3 (GALLART hizo a los 17 minutos de partido el primer gol ovetense —era el 1 a 2, tras el  citado del Barcelona a los 6 minutos y otro posterior—).
+                    </p>          
+
+                    <p>
+                        Eran días felices en lo futbolístico en la capital del Principado, haciéndose famosa la delantera llamada «eléctrica» por su facilidad goleadora. La integraban «CASUCO», GALLART, LÁNGARA, «HERRERITA» y «EMILÍN» (lograron en los 62 partidos de esas tres primeras temporadas nada menos que 174 goles). Hay que decir que esta fué la 2ª «eléctrica», de las tres que hubo; «CASUCO», GALLART, LÁNGARA, GALÉ e INCIARTE conformaron la 1ª, la que logró el ascenso y «ANTÓN», «GOYÍN», ECHEVARRÍA, «HERRERITA» y «EMILÍN», la 3ª , ya tras la guerra.
+
+                        <figure class="img img-left" />
+                             <img src="./img/historia/langaraherreritavsarbitro.jpg" />                   
+                            <figcaption>
+                                Langara y Hererrita se encaran con el arbitro.
+                            </figcaption>
+                        </figure>
+                    </p>
+
+                    <p>
+                        Pero la Guerra Civil truncó de pleno el camino de un equipo llamado a logros importantes. En la temporada 1939/40, al Real Oviedo se le concede la «gracia» de reservarle la plaza, no compitiendo ese año, ante la situación del campo y de la ciudad tras la contienda. A cambio, el club tuvo que ceder a sus jugadores a otros equipos («HERRERITA», «EMILÍN» y RIERA se fueron al Barcelona, GALLART y «CALICHI» al Racing del Ferrol, «ANTÓN» y SOLADRERO al R. Zaragoza, PENA al Sporting, etc.).
+                    </p>
+
+                    <p>
+                        Pese a su vuelta ya nada sería igual en la temporada 40/41. LÁNGARA estaba en Argentina y la guerra había provocado importantes bajas.
+                    </p>
+
+                    <p>
+                        
+                        La década de los 40 transcurre más que aceptablemente, con el equipo en 1ª, incluso en zonas altas de la tabla —aunque sin el nivel de la década anterior— hasta que coincidiéndo con el fallecimiento de Don Carlos Tartiere llega el primer descenso, en el año 1950.
+                    </p>
+
+                    <p>
+                        Comienza una larga travesía de más de 35 años en los cuales el Real Oviedo se convierte en un equipo ascensor y muy irregular en el panorama futbolístico español, con algún que otro importante logro (en la temporada 1962/63 se clasifica, por tercera vez en su historia, 3º en 1ª división) y varias decepciones.
+
+                        <figure class="img img-long" />
+                             <img src="./img/historia/tercerosenliga6263.jpg" />                   
+                            <figcaption>
+                                3º en Primera división.
+                            </figcaption>
+                        </figure>
+                    </p>
+
+                    <h2>
+                        El Real Oviedo se muda.
+                    </h2>
+
+                    <p>
+                        En 1954 el campo es vendido al Ayuntamiento por una suma poco menos que simbólica, adquiriendo éste a cambio, el compromiso de asegurarle al club de por vida un escenario digno. Desde 1958 pasaría a denominarse Estadio Carlos Tartiere, campo que sería totalmente reformado con motivo de la celebración del Campeonato del Mundo en el año 1982.
+                    </p>
+                    <h2>
+                        Los 80 trajeron un título, y el regreso a Primera División.
+                    </h2>
+                    <p>
+                        Obtiene su único título oficial en la temporada 1984/85 al proclamarse vencedor de la Copa de la Liga de 2ª división (torneo de efímera duración del que sólo se disputaron cuatro ediciones).
+                    </p>
+                    <!-- Imagen del título de 2ª !! -->
+
+                    <p>
+                        A finales de los 80, la entidad vive un renacer volviendo a 1ª división (después de 12 años de 2ª división, y un paso por 2ª B en los años 70).
+                    </p>
+                    
+                    <h2> Llegaron los 90, y la UEFA </h2>
+
+
+                   
+
+
+                    <p>               
+                        <figure class="img img-right" />                      
+
+                             <img src="./img/historia/buenoviedo9091.jpg" />                   
+                            <figcaption>
+                                Genoa - Real Oviedo - 1991
+                            </figcaption>
+                        </figure>
+                    </p>
+                    <p>
+                        El 19 de Septiembre de 1991, el Real Oviedo debuta en una competición europea venciendo al Geona italiano por 1-0 (gol de Bango), en 1/32 de final de la UEFA.
+                    </p>
+                   
+                    <p>
+                        En el partido de vuelta, perdió por 3-1 en Italia, recibiendo el gol decisivo al final del encuentro, y tras sufrir un arbitraje tremendamente perjudicial.
+
+                        <figure class="img img-left" />                      
+
+                             <img src="./img/historia/genoaoviedo1991.jpg" />                   
+                            <figcaption>
+                                Genoa - Real Oviedo - 91/92
+                            </figcaption>
+                        </figure>
+                    </p>
+
+                    <h2> Conversión en SAD </h2>
+                    <p>
+                        En 1992 se convierte en Sociedad Anónima Deportiva, con un capital social de 605 millones de ptas.
+                    </p>
+                   
+                    <h2> Los 2000, nueva casa, y comienza el sufrimiento.</h2>
+
+                    <p>
+                        Abandonando la ubicación de Buenavista, donde el club llevaba jugando bastante más de medio siglo, el 20 de septiembre de 2000 se inaugura oficialmente el Nuevo Estadio Carlos Tartiere con un partido entre el Real Oviedo y el Partizán de Belgrado (0 - 2).
+
+                        Tres días antes, el jugador de la U.D. Las Palmas Robert JARNI había logrado de penalty el primer gol en partido oficial disputado. LOSADA hizo el primer gol oviedista concluyendo el partido 2 - 2.
+                    </p>
+
+                    <h2> Descenso a 2ª y a los barrizales. </h2>
+
+                    <p> 
+
+                         <figure class="img img-right" />                      
+
+                             <img src="./img/historia/escudo75aniversario.jpg" />                   
+                            <figcaption>
+                                Escudo del 75º aniversario del Real Oviedo
+                            </figcaption>
+                        </figure>
+                    </p>
+                    <p>
+
+                        Coincidiendo con la conmemoración del 75º aniversario de la fundación del club se pone fin al más largo periodo continuado en 1ª división (13 temporadas) con un descenso que acrecentaría notablemente los problemas económicos generalizados en el mundo del fútbol, hasta el punto de surgir el riesgo de una inminente desaparición que, por si no tuviese suficiente motivación en la nefasta gestión económica realizada por el máximo accionista Celso González (con Eugenio Prieto en la presidencia), contó con las disputas políticas y la hostilidad del equipo de gobierno del Ayuntamiento de la ciudad como acicate para dificultar aún más la ya de por sí crítica situación. La labor del presidente Manuel Lafuente (quien ccedió al scargo tras el cobarde abandono de los dirigentes responsables de la catástrofe) permitió la continuidad del Real Oviedo.
+                    </p>
+
+                    <p>
+                        Tras chantajear vilmente a todo el oviedismo con sus continuos cambios de criterio y de exigencias, motivadas por sus intereses económicos personales (acuerdos previos con otros clubes supeditados al desmoronamiento del Real Oviedo), el 1 de agosto de 2003 se consumaba un segundo descenso (esta vez administrativo) que condenaba al Real Oviedo a la 3ª división, en pleno proceso de suspensión de pagos y ponía la supervivencia de la sociedad más en entredicho que nunca.
+                    </p>
+
+                    <p>
+                        Con el equipo en 3ª división, Gabino de Lorenzo, alcalde de Oviedo, decidió que el Real Oviedo debía desaparecer.
+                        Ignoró el acuerdo de apoyo al Real Oviedo que había firmado en campaña electoral, y refundó el Astur CF como Oviedo ACF, que echó a andar el 14 de Agostro de 2003.
+                        El recién fundado Oviedo ACF nació con un escudo y colores idénticos a los del Real Oviedo.
+                        También se intentó que el Real Oviedo dejase el Nuevo estadio Carlos Tartiere para que fuese el estadio del Oviedo ACF.
+                    </p>
+
+                    <p>
+                        El Real Oviedo no había desaparecido, y paralelamente, parte de su afición seguía luchando por salvar al club.            
+                    </p>
+                    <p>
+                        Los aficionados del Real Oviedo hicieron tareas de albañilería, fontanería, jardinería, electricidad en el Requexón (ciudad deportiva) y en el estadio Carlos Tartiere.
+                    </p>
+                    <p>
+                        También hicieron rifas, mercadillos, y donaciones para ayudar a la supervivencia económica del club.
+                    </p>
+                    <p>
+                        En éste proceso de salvación del club tuvo un papel especialmente importante la peña Symmachiarii 1994.
+                    </p>
+                    
+                    <p>
+                        En la temporada 2003/2004 se consiguieron 10.871 abonados, 16.573 espectadores en el partido contra el Oviedo ACF, y 20.127 en la promoción de ascenso, en la que el Real Oiedo no consiguió el ascenso.
+                        Fue la rebelión del Oviedismo frente a los que pensaba y/o deseaban que el club desapareciera.                                 
+                    </p>
+
+
+                    <p>
+                        Tras superar con éxito el proceso de suspensión de pagos, y batiendo sus propios records ( 13.000 abonados en 3ª y 25.000 personas en un partido de play-off a 2ª B), debería haber empezado el proceso de volver al fútbol profesional.
+                    </p>
+
+                    <p>
+                        Sin embargo, volvió la incertidumbre al futuro del club. Celso González recuperó la titularidad del paquete accionarial a causa de una resolución judicial. 
+                        Y con Celso, volvió el riesgo de volver a descender a 3ª división.
+                    </p>
+
+                    <p>
+                        A finales del año 2006, después de una ampliación de capital, cambió en mapa accionarial del club con nuevo grupo al frente del mismo.
+                    </p>
+
+                    <p>
+                        Pero éste cambio, lejos de mejorar la situación (deportiva, económica, y social) del Real Oviedo, no hizo más que empeorarla.
+                    </p>
+                    <p>
+                        Toni Fidalgo dimitió del cargo de presidente solo tres semanas de acceder al mismo. La actuación del consejo de administración era más que deficiente.
+                    </p>
+                    <p>
+                        Finalmente, en la temporada 2007, el Real Oviedo descendía por primera vez en su historia de forma deportiva, a 3ª división.
+                    </p>
+
+                    <p>
+                        Tras otra ampliación, el capital social del club quedó fiado en 4.716.855 €
+                    </p>
+
+                    <p>
+                        Cambió el consejo de admón. del club. El nuevo equipo gestor estaba encabezado por Alberto Gonzalez.
+                    </p>
+
+                    <p>
+                        Y la situacíón económica volvía a ser penosa. 
+                    </p>
+                    <p>
+                        Deportivamente, las cosas no eran mucho mejor. Se tardaron 2 años en conseguir el ascenso de 3ª a 2ª División B.
+                    </p>
+
+                    <p>
+                        El club volvía a estar cerca de desaparecer por la gestión de Alberto González. Y no ayudaba el hecho de que recibía poco apoyo desde el gobierno regional y desde el ayto. de Oviedo.                    
+                    </p>
+
+                    <p>
+                       La temporada 2008, el Real Oviedo cayo contra el Caravaca de la Cruz (Murcia) en el play-off de ascenso a 2ª División B. Tocaba voler a levantarse, y perseguir el ascenso de nuevo.
+                    </p>
+                    <p>
+                        La temporada de 2009 será recordada por el ascenso en Mallorca frentre al filial Balear.
+                        La ida se celebraría en Oviedo, y la vuelta en Mallorca. Una semana antes del partido de vuelta (31 de Mayo de 2009), la afición azul ya había agotado todos los vuelos a Mallorca desde Santiago de Compostela, Oviedo, Santander, y Bilbao.
+                    </p>
+                    <p>
+                        El partido de ida, recogió la asisténcia de más de 27.000 personas (esa jornada no se registró esa entrada en ningún campo de 2ª División).
+                        Terminó 1-0 con gol de penalti de Diego Cervero, espíritu y alma del Oviedismo.                    
+                    </p>     
+
+                    <p>
+                        1.500 Oviedistas poblaron el fondo norte del estadio de Son Moix, en Palma, para ver ascender al Real Oviedo a 2ª División B.
+                    </p>
+
+                    <p>
+                        El Mallorca B se adelantó en la (primera / segunda) parte, terminando el partido y la prorroga con un resultado de 1-0.                    
+                    </p>
+                    <p>
+                        Fue un partido de infarto, que difícilmente olvidarán ni los que lo vivieron en vivo, y los que tuvieron que verlo desde Oviedo.
+                    </p>
+                    <p>
+                        Se llegó a la tanda de penalties. Marcó el Real Oviedo. Marcó el Mallorca B. Y asi hasta el último y decisivo penalti que lanzaría Kevin (Mallorca B).                    
+                    </p>
+                    <p>
+                        Paró Onaitz Auléstia. El Real Oviedo volvía a ser equipo de 2ª División B.
+                    </p>
+                    <p>
+                        Puede parecer que un asceno a 2ª división B no tiene valor como para celebrarlo de la forma que lo hizo la afición azul.
+                        Sin embargo, hay que recordar que esa afición había vivido en dos ocasiones la casi desaparición del club.
+                    </p>
+                    <p>
+                        En Enero de 2011, parecía posible la salida de Alberto Gonzalez (máximo accionista). Surgió una oferta para su paquete accionarial, del grupo Mexicano Pegaso.
+                    </p>
+                    <p>
+                        Alberto Gonzalez ocultó información a Pegaso sobre una pignoración (bla bla bla) que pesaba sobre las acciones.                     
+                    </p>
+                    <p>
+                        Por tanto, a pesar de estar en 2ª B, la situación deportiva, económica, y social del club era caótica.
+                    </p>  
+                    <p>
+                        En 2012 llega a la alcaldía de la ciudad Agustín Iglesias Caunedo. El consistorio asumió su responsabilidad como segundo máximo accionista del Real Oviedo.
+                    </p>
+                    <p>
+                        La APARO colaboró (Asociación de Peñas del Real Oviedo), juntando a los pequeños accionistas para superar el porcentaje que controlaba Alberto González, fugado del país, y en estado de busca y captura por delitos fiscales.
+                    </p>
+                    <p>
+                        En Julio de 2012 se consiguió forzar el cambió en la cúpula dirigente del club, y volvió a la presidencia del Real Oviedo Toni Fidalgo.
+                    </p>
+
+                    <p>
+                        En el consejo de admón había Oviedistas de corazón como Pedro Zuazua y Juan Ramón González, Hugo López o Sabino López.
+
+                        En solo tres meses pusieron en orden la entidad para una nueva ampliación de capital para evitar la causa de disulución, en la que iba a estar en juego, una vez más, el futuro del Real Oviedo.
+                    </p>
+
+                    <p>
+                        La afición del Real Oviedo volvió a ser clave en la salvación del club. 
+                        A través de las redes sociales, y gracias a figuras como Santi Cazorla (Arsenal FC) , Michu (Swansea City FC) , y Adrían (Atco. Madrid), se dió a conocer la historia del club en todo el mundo.
+
+                    </p>
+
+                    <p> 
+                        Gente de Oviedo, Asturias, España, y de todo el mundo aportaron dinero en compra de acciones hasta llegar a 2 millones de € de ampliación.                    
+                    </p>
+                    <p>
+                        Por su parte, el grupo empresarial del mexicano Carlos Slim aportó la misma cantidad, asombrado por la repercusión del Real Oviedo en el mundo.
+                    </p>
+                </div>                
             </div> <!-- main page -->
 
             <script type="text/javascript">
                 app.init();
             </script>
-    </body>
+    </body>    
 </html>

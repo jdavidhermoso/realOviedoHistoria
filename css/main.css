@@ -18,7 +18,21 @@
     font-family: roboto-normal;
     src: url(../fonts/roboto/Roboto-Medium-webfont.ttf);
 }
+/* LISTS */
+ul{
+	margin: 0;	
+	padding: 0;
+	list-style: none;
+}
 
+body,html{
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	top:0px;
+}
 
 
 [data-role="page"]{
@@ -31,25 +45,99 @@
 
 /* HEADER */
 
+.rememberEdu{
+	/* This div will be only shown the first time you open the app. It will tell users about realoviedo.info. */
+
+	position: absolute;
+	width: 90%;
+	max-width: 90%;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #FFF89B;
+	clear:  both;
+}
+.close-rememberEdu{
+	padding: 5px;
+	color: #FF0000;
+}
+
+#sabiasque .sabiasque-content{
+	
+}
+
+
+#sabiasquelista .sabiasquelista-content { 
+	margin-top: 50px;	
+	text-align: center;
+}
+
+.sabiasquestory {
+	margin: 100px auto!important;
+	color: rgb(0,0,153);
+	font-size: 25px;
+
+}
+.backToList {
+	float: right;
+	margin-right: 25px;
+	display: none;
+}
+.back-page-icon {
+	color: #FFFFFF;
+}
+
+.loading-text {
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	display: none;
+}
+
+.loading-logo {
+	
+	width: 150px;
+	height: 150px;
+	/*display: none;*/
+	margin: 0 auto;
+}
 .header-bar{
+	position: fixed;
+	width: 100%;
+	max-width: 100%;
+	top: -10px;
+
 	background-color: rgb(0,0,153);
-	padding: 20px;
+	padding: 10px 0;
+	margin: 0;
 	font-size: 30px;
+	color: #FFFFFF;
+	border-bottom: 2px solid #F9F900;
 }
 .header-bar a{
 	text-decoration: none;
+}
+
+.header-bar h1{
+	word-wrap: break-word;
 }
 
 .ui-header.ui-bar-inherit{
 	background-color: transparent;
 	border: none;
 }
-.open-menu-icon,.close-menu-icon{
+.open-menu-icon,.close-menu-icon, .reload-page-icon{
 	padding: 3px;
 	margin: 5px;
+	color: #F9F900;
+
 	
 }
-.open-menu{
+.reload-page{
+	float: right;
+	padding-right: 20px;
+}
+.open-menu, .reload-page{
 	display: inline-block;
 }
 
@@ -72,8 +160,6 @@ h1{
 	margin: 0;
 }
 
-
-
 .nav-links{
 	position: absolute;
 	top: 160px;
@@ -87,7 +173,7 @@ h1{
 .ui-panel-inner{
 	position: absolute;
 
-    top: 1px;
+    top: 0px;
     left: 0;
     right: 0;
     bottom: 0px;
@@ -139,13 +225,26 @@ h1{
 }
 
 .volume{
-	font-size: 30px;
+	float: right;
+	font-size: 40px;
+	margin: 0 20px;
 }
+.fa-volume-off{
+	display: none;
+}
+
+.fa-volume-up{
+	display: block;
+}
+
 
 /* Historia */
 
 .article p, .article h1, .article h2, .article h3{
-	text-align: center;
+	width: 90%;
+	max-width: 90%;
+	text-align: left;
+	margin: 0 auto;
 }
 
 .img {
@@ -168,4 +267,113 @@ h1{
 }
 .img-right{
 	float: right;
+}
+
+.audio-title{
+	border: 1px solid red;
+}
+audio{
+	display: block;
+	margin: 0 auto;
+}
+
+.ui-content{
+	margin-top: 50px;
+}
+
+/* TABLES */
+
+.headRow-cell{
+	width: 100%;
+	max-width: 100%;
+	background-color: rgb(0,0,153);
+	padding: 10px 0;
+	color: #FFFFFF;
+	border-bottom: 2px solid #F9F900;	
+}
+
+.partidosOficiales-division-tr{
+	border: 2px solid #FFB700;
+	border-top: 5px solid #FFB700;
+}
+
+td{
+	margin-top: 10px!important;
+
+}
+tr{
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+}
+@media screen and (min-width: 555px) { 
+	.headRow-cell, .voidTR, .voidTD{
+		display: none!important;
+	}
+
+}
+
+@media screen and (max-width: 366px){
+	.header-bar{
+		font-size: 20px;
+	}
+}	
+td,th{
+	text-align: center!important;
+}
+
+#palmares li{
+	padding: 5px;
+}
+
+/* INFO PAGE */
+
+#info p{
+	line-height: 25px;
+}
+
+#info li{
+	padding: 10px;
+}
+
+.shareButton {
+	width: 32%;
+	display: inline-block;
+	font-size: 50px!important;
+
+	
+	text-align: center;
+	
+}
+.fa-facebook{
+	width: 40px;
+	height: 40px;
+	text-align: left;
+	padding: 15px;
+	color: #FFFFFF;
+	background-color: #3b5998
+}
+.fa-twitter{
+	color: #55acee;
+}
+
+.fa-whatsapp img{
+		width: 50px;
+	}
+
+@media screen and (max-width: 400px) {
+	.shareButton {
+	
+		width: 100%;
+		max-width: 100%;
+		display: inline-block;
+		font-size: 50px!important;
+
+		
+		text-align: center;
+	
+	}	
+}
+
+.italic-p{
+	font-style: italic;
 }
